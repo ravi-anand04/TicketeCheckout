@@ -25,7 +25,7 @@ const Summary = () => {
   const img_url = "https://source.unsplash.com/random/400x250/?scenery";
 
   return (
-    <div className="border border-stone-300 mt-12 rounded-2xl p-3">
+    <div className="border border-stone-300 -mt-16 max-sm:mt-4 rounded-2xl p-3">
       <div className="carousel mb-8">
         <Slider {...settings}>
           <div className="relative">
@@ -122,8 +122,11 @@ const Summary = () => {
       </div>
       <div className="header flex flex-col gap-2 px-4">
         <div className="rating flex gap-2 items-center">
-          <FaStar />
-          <b>4.9 (4.5k), </b> <span className="font-semibold">Resort</span>
+          <FaStar className="text-orange-500" />
+          <span>
+            <b>4.9 </b>(4.5k)
+          </span>
+          <span className="font-semibold">Tourism</span>
         </div>
         <h1 className="font-semibold mb-4">
           Amsterdam open boat canal cruise - Live Guiye from Anne Frank Housef
@@ -148,8 +151,10 @@ const Summary = () => {
         </div>
         <hr />
         <div className="payment-summary flex justify-between mb-4">
-          <h1>View payment summary</h1>
-          <span className="font-bold text-xl">+</span>
+          <h1 className="underline font-semibold text-stone-500">
+            View payment summary
+          </h1>
+          <span className="font-bold text-xl text-stone-500">+</span>
         </div>
       </div>
       <hr />
@@ -170,7 +175,7 @@ const Summary = () => {
           </h1>
           <CiCircleInfo />
         </span>
-        <div className="terms">
+        <div className="terms max-sm:hidden">
           <h1 className="text-sm flex flex-wrap gap-1 mt-6">
             By clicking “confirm & pay”, you agree to
             <span className="text-blue-500 hover:text-blue-700 underline">
@@ -182,7 +187,7 @@ const Summary = () => {
             </span>
           </h1>
         </div>
-        <button className="bg-black flex gap-2 text-bold  justify-center items-center rounded-xl text-white px-6 py-3">
+        <button className="bg-black flex gap-2 text-bold max-sm:hidden justify-center items-center rounded-xl text-white px-6 py-3">
           <CiLock className="text-xl" />
           <h1>Confirm and pay</h1>
         </button>

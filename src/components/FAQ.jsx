@@ -11,29 +11,32 @@ const FAQ = () => {
   });
 
   return (
-    <div className="mt-12 flex gap-8">
-      <section className="intro w-[40%]">
-        <h1 className="text-xl font-bold">Frequently asked questions</h1>
-        <span className="mt-2 text-stone-400">
+    <div className="mt-12 flex max-sm:flex-col gap-8">
+      <div className="w-[40%] max-sm:w-full">
+        <h1 className="my-2 text-xl font-bold">Frequently asked questions</h1>
+        <span className="my-2 mt-2 text-stone-400">
           Here are some of our most asked questions
         </span>
-        <div className="action-call flex justify-between bg-slate-100 mt-12 rounded-xl p-4">
-          <div className="flex flex-col items-start gap-2 ">
-            <div className="font-bold flex flex-col">
-              <h1>Still need help?</h1>
-              <h1>We're here for you.</h1>
-            </div>
+        <section className="intro max-sm:hidden sm:w-full max-sm:order-2">
+          <div className="action-call flex justify-between bg-slate-100 mt-12 rounded-xl p-4">
+            <div className="flex flex-col items-start gap-2 ">
+              <div className="font-bold flex flex-col">
+                <h1>Still need help?</h1>
+                <h1>We're here for you.</h1>
+              </div>
 
-            <button className="bg-black flex items-center my-4 gap-2 px-6 py-3 text-white self-start rounded-xl text-bold">
-              Chat with us
-            </button>
+              <button className="bg-black flex items-center my-4 gap-2 px-6 py-3 text-white self-start rounded-xl text-bold">
+                Chat with us
+              </button>
+            </div>
+            <div className="flex items-center">
+              <Chat />
+            </div>
           </div>
-          <div className="flex items-center">
-            <Chat />
-          </div>
-        </div>
-      </section>
-      <section className="questions w-[60%] flex flex-col gap-4">
+          <hr className="my-8 border sm:hidden" />
+        </section>
+      </div>
+      <section className="questions w-[60%] max-sm:w-full flex flex-col max-md:order-1 gap-4">
         <div className="question-card flex gap-4 rounded-xl border-stone-200 border-2 p-4">
           <div className={`closed `}>
             <article className="flex gap-4 items-center">
@@ -136,6 +139,24 @@ const FAQ = () => {
               </h1>
             )}
           </div>
+        </div>
+        <div className="intro max-sm:w-full sm:hidden">
+          <div className="action-call flex justify-between bg-slate-100 mt-12 rounded-xl p-4">
+            <div className="flex flex-col items-start gap-2 ">
+              <div className="font-bold flex flex-col">
+                <h1>Still need help?</h1>
+                <h1>We're here for you.</h1>
+              </div>
+
+              <button className="bg-black flex items-center my-4 gap-2 px-6 py-3 text-white self-start rounded-xl text-bold">
+                Chat with us
+              </button>
+            </div>
+            <div className="flex items-center">
+              <Chat />
+            </div>
+          </div>
+          <hr className="my-8 border sm:hidden" />
         </div>
       </section>
     </div>

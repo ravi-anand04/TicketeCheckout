@@ -5,24 +5,32 @@ import WhiteLogo from "../assets/WhiteLogo";
 
 export const Footer = () => {
   return (
-    <div className="px-48 py-4 max-xl:px-12 bg-black text-white">
+    <div className="px-48 py-4 max-xl:px-12 max-md:px-4 bg-black text-white">
       <div className="header my-12">
         <WhiteLogo />
       </div>
       <hr />
-      <div className="links flex gap-8 my-6">
-        <h1 className="flex gap-2 items-center">
+      <div className="links flex max-sm:flex-col gap-8 my-6">
+        <h1 className="flex gap-2 items-center max-md:order-2">
           <span className="text-stone-500">Made with</span>
           <span>
             <FaHeart className="text-red-600 text-extrabold text-xl" />
           </span>
         </h1>
-        <ul className="flex flex-wrap gap-8 list-disc">
-          <li>Privacy Policy</li>
-          <li>Terms of usage</li>
-          <li>Cancellation Policy</li>
-          <li>Sitemap</li>
-        </ul>
+        <div className="flex flex-wrap text-sm text-stone-500 gap-3">
+          <li className="text-stone-300 max-sm:list-none hover:text-stone-600 ease-in-out delay-75">
+            Privacy Policy
+          </li>
+          <li className="text-stone-300 hover:text-stone-600 ease-in-out delay-75">
+            Terms of usage
+          </li>
+          <li className="text-stone-300 hover:text-stone-600 ease-in-out delay-75">
+            Cancellation Policy
+          </li>
+          <li className="text-stone-300 max-sm:list-none hover:text-stone-600 ease-in-out delay-75">
+            Sitemap
+          </li>
+        </div>
       </div>
     </div>
   );
