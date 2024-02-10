@@ -1,8 +1,7 @@
-# React + Vite
+# Introduction
+The tickete checkout UI is a sleek and user-friendly interface designed to streamline the ticket purchasing process. Crafted with React and styled with Tailwind CSS, this UI offers a seamless experience for users as they finalize their ticket purchases.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The UI features responsive design, adapting seamlessly to different screen sizes and devices, ensuring a consistent and optimized experience for users across desktops, tablets, and mobile devices.
 
-Currently, two official plugins are available:
+Live: https://tickete-checkout.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
